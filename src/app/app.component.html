@@ -1,0 +1,36 @@
+<h1 style="text-align: center; margin-bottom: 1.5rem;">Establecimientos Educativos Públicos y Privados de Pasto</h1>
+<div class="container">
+  <div *ngIf="articulos!=null; else espera">
+    <table datatable [dtOptions]="dtOptions" class="table table-striped row-border hover, tabla">
+      <thead class="thead-dark">
+        <tr>
+          <td>Codigo</td><td>Nombre</td><td>Sector</td><td>Nombre Rector</td><td>Teléfono</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="fils" *ngFor="let art of articulos">
+        <td >{{art.no}}</td>
+      <!-- <td>{{art.c_digo}}</td> -->
+      <td >{{art.nombre}}</td>
+      <td>{{art.sector}}</td>
+      <td>{{art.nombre_rector}}</td>
+      <td>{{art.tel_fono}}</td><!--
+      <td>{{art.correo_electr_nico}}</td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #espera>Esperando datos...</ng-template>
+</div>
+
+
+<footer class="mt-5">
+  <p class="text-center">Jairo Rosero</p>
+  <p class="text-center">
+    San Juan de Pasto- Copyright &copy;
+    <script>
+      document.write(new Date().getFullYear());
+    </script>
+     Reserved
+  </p>
+</footer>

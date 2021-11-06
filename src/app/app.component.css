@@ -1,0 +1,17 @@
+.container{
+  width: auto;
+}
+.tabla{
+  background-color:rgb(161, 159, 159);
+  width: 100%;
+  vertical-align: top;
+  font-family: fantasy;
+}
+.fils
+{
+
+ background-color: gainsboro;
+ border-radius: 3px;
+ font-size:medium;
+ font-family:cursive;
+}
